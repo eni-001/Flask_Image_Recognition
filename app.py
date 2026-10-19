@@ -11,7 +11,6 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     """Display the image-upload home page."""
-    temporary_message = "CI progression check"
     return render_template("index.html")
 
 
