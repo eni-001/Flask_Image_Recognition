@@ -1,4 +1,4 @@
-"""Flask application for uploading an image and displaying its prediction."""
+"""Flask application for handwritten digit recognition."""
 
 from flask import Flask, render_template, request
 
@@ -11,6 +11,7 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     """Display the image-upload home page."""
+    temporary_message = "CI progression check"
     return render_template("index.html")
 
 
